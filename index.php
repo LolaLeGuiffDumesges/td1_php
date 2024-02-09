@@ -70,8 +70,11 @@ $languages = ['C', 'Java', 'Perl'];
                         <p>Division : 10/10 = <?php // echo 10/10 
                                                 ?></p> -->
                         <p>Somme : <?php echo $nb1 . ' + ' . $nb2 . ' = ' ?><?php echo $nb1 + $nb2 ?></p>
+                        <p>Somme : <?= $nb1?> + <?= $nb2?> = <?= $nb1+$nb2?></p>
                         <p>Produit : <?php echo $nb1 . ' * ' . $nb2 . ' = ' ?><?php echo $nb1 * $nb2 ?></p>
+                        <p>Produit : <?= "$nb1 * $nb2 = ".$nb1*$nb2 ?></p>
                         <p>Modulo : <?php echo $nb1 . ' % ' . $nb2 . ' = ' ?><?php echo $nb1 % $nb2 ?></p>
+                        <p>Modulo : <?= $nb1.' % '.$nb2.' = '.$nb1%$nb2?></p>
                         <p>Différence : <?php echo $nb1 . ' - ' . $nb2 . ' = ' ?><?php echo $nb1 - $nb2 ?></p>
                         <p>Division : <?php echo $nb1 . ' / ' . $nb2 . ' = ' ?><?php echo $nb1 / $nb2 ?></p>
                     </div>
@@ -88,7 +91,7 @@ $languages = ['C', 'Java', 'Perl'];
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="card-body">
                         <p>
-                            <?php echo $str1 . ' ' . $str2 ?>
+                            <?= $str1 . '<br>' . $str2 ?>
                         </p>
                     </div>
                 </div>
