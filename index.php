@@ -70,11 +70,11 @@ $languages = ['C', 'Java', 'Perl'];
                         <p>Division : 10/10 = <?php // echo 10/10 
                                                 ?></p> -->
                         <p>Somme : <?php echo $nb1 . ' + ' . $nb2 . ' = ' ?><?php echo $nb1 + $nb2 ?></p>
-                        <p>Somme : <?= $nb1?> + <?= $nb2?> = <?= $nb1+$nb2?></p>
+                        <p>Somme : <?= $nb1 ?> + <?= $nb2 ?> = <?= $nb1 + $nb2 ?></p>
                         <p>Produit : <?php echo $nb1 . ' * ' . $nb2 . ' = ' ?><?php echo $nb1 * $nb2 ?></p>
-                        <p>Produit : <?= "$nb1 * $nb2 = ".$nb1*$nb2 ?></p>
+                        <p>Produit : <?= "$nb1 * $nb2 = " . $nb1 * $nb2 ?></p>
                         <p>Modulo : <?php echo $nb1 . ' % ' . $nb2 . ' = ' ?><?php echo $nb1 % $nb2 ?></p>
-                        <p>Modulo : <?= $nb1.' % '.$nb2.' = '.$nb1%$nb2?></p>
+                        <p>Modulo : <?= $nb1 . ' % ' . $nb2 . ' = ' . $nb1 % $nb2 ?></p>
                         <p>Différence : <?php echo $nb1 . ' - ' . $nb2 . ' = ' ?><?php echo $nb1 - $nb2 ?></p>
                         <p>Division : <?php echo $nb1 . ' / ' . $nb2 . ' = ' ?><?php echo $nb1 / $nb2 ?></p>
                     </div>
@@ -110,7 +110,7 @@ $languages = ['C', 'Java', 'Perl'];
                         <p>
                             La variable un est supérieure à la variable deux :
                             <!-- écrire votre code dans le span -->
-                            <span class="bg-secondary p-2"> <?php
+                            <span class="bg-primary p-2"> <?php
                                                             if ($nb1 > $nb2) {
                                                                 echo 'VRAI';
                                                             } else {
@@ -120,7 +120,7 @@ $languages = ['C', 'Java', 'Perl'];
                         </p>
                         <p>La variable un est strictement supérieure à la variable deux :
                             <!-- écrire votre code dans le span -->
-                            <span class="bg-secondary p-2"><?php
+                            <span class="bg-primary p-2"><?php
                                                             if ($nb1 > $nb2) {
                                                                 echo 'VRAI';
                                                             } else {
@@ -129,7 +129,7 @@ $languages = ['C', 'Java', 'Perl'];
                                                             ?></span>
                         </p>
                         <p>La variable un est égale à la variable deux :
-                            <span class="bg-secondary p-2"><?php
+                            <span class="bg-primary p-2"><?php
                                                             if ($nb1 == $nb2) {
                                                                 echo 'VRAI';
                                                             } else {
@@ -138,7 +138,7 @@ $languages = ['C', 'Java', 'Perl'];
                                                             ?></span>
                         </p>
                         <p>La variable un est strictement égale à la variable deux :
-                            <span class="bg-secondary p-2">
+                            <span class="bg-primary p-2">
                                 <?php
                                 if ($nb1 === $nb2) {
                                     echo 'VRAI';
@@ -148,7 +148,7 @@ $languages = ['C', 'Java', 'Perl'];
                                 ?> </span>
                         </p>
                         <p>La variable un est supérieure ou égale à la variable deux :
-                            <span class="bg-secondary p-2">
+                            <span class="bg-primary p-2">
                                 <?php
                                 if ($nb1 >= $nb2) {
                                     echo 'VRAI';
@@ -158,7 +158,7 @@ $languages = ['C', 'Java', 'Perl'];
                                 ?></span>
                         </p>
                         <p>La variable un est inférieure ou strictement égale à la variable deux :
-                            <span class="bg-secondary p-2"> <?php
+                            <span class="bg-primary p-2"> <?php
                                                             if ($nb1 <= $nb2) {
                                                                 echo 'VRAI';
                                                             } else {
@@ -182,9 +182,9 @@ $languages = ['C', 'Java', 'Perl'];
                         <h4>Liste des langages dont la syntaxe du PHP est inspirée</h4>
                         <!-- écrire votre code ici -->
                         <?php "<ul>";
-                            foreach ($languages as $element) {
-                                echo "<li>$element</li>";
-                            }
+                        foreach ($languages as $element) {
+                            echo "<li>$element</li>";
+                        }
                         ?>
                     </div>
                 </div>
